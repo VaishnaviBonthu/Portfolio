@@ -10,9 +10,10 @@
             --primary: #6C63FF;
             --secondary: #4D44DB;
             --accent: #FF6584;
-            --dark: #2D3748;
-            --light: #F7FAFC;
-            --gray: #E2E8F0;
+            --dark: #121212;
+            --light: #1E1E1E;
+            --gray: #2D2D2D;
+            --text: #E0E0E0;
             --success: #48BB78;
         }
         
@@ -25,8 +26,8 @@
         body {
             font-family: 'Poppins', sans-serif;
             line-height: 1.6;
-            color: var(--dark);
-            background-color: var(--light);
+            color: var(--text);
+            background-color: var(--dark);
             overflow-x: hidden;
         }
         
@@ -39,8 +40,8 @@
         
         /* Header Styles */
         header {
-            background-color: white;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: var(--light);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
             position: fixed;
             width: 100%;
             top: 0;
@@ -49,7 +50,7 @@
         }
         
         header.scrolled {
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
         }
         
         .header-container {
@@ -84,7 +85,7 @@
         
         nav ul li a {
             text-decoration: none;
-            color: var(--dark);
+            color: var(--text);
             font-weight: 500;
             position: relative;
             transition: all 0.3s ease;
@@ -112,6 +113,7 @@
         .hamburger {
             display: none;
             cursor: pointer;
+            color: var(--text);
         }
         
         /* Hero Section */
@@ -149,7 +151,7 @@
         h1 {
             font-size: 3.5rem;
             margin-bottom: 20px;
-            color: var(--dark);
+            color: var(--text);
             line-height: 1.2;
         }
         
@@ -160,7 +162,7 @@
         .hero p {
             font-size: 1.2rem;
             margin-bottom: 30px;
-            color: #4A5568;
+            color: #B0B0B0;
         }
         
         .btn {
@@ -204,11 +206,11 @@
             justify-content: center;
             width: 40px;
             height: 40px;
-            background: white;
+            background: var(--light);
             border-radius: 50%;
             margin-right: 15px;
             color: var(--primary);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             transition: all 0.3s ease;
         }
         
@@ -230,7 +232,7 @@
         
         .section-title h2 {
             font-size: 2.5rem;
-            color: var(--dark);
+            color: var(--text);
             position: relative;
             display: inline-block;
         }
@@ -262,7 +264,7 @@
         .about-image img {
             max-width: 100%;
             border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
         }
         
         .about-text {
@@ -272,12 +274,12 @@
         .about-text h3 {
             font-size: 2rem;
             margin-bottom: 20px;
-            color: var(--dark);
+            color: var(--text);
         }
         
         .about-text p {
             margin-bottom: 15px;
-            color: #4A5568;
+            color: #B0B0B0;
         }
         
         .info-item {
@@ -286,7 +288,7 @@
         
         .info-item strong {
             font-weight: 600;
-            color: var(--dark);
+            color: var(--text);
             margin-right: 10px;
         }
         
@@ -298,16 +300,16 @@
         }
         
         .skill-category {
-            background: white;
+            background: var(--light);
             border-radius: 10px;
             padding: 30px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         
         .skill-category:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
         }
         
         .skill-category h3 {
@@ -353,7 +355,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
             animation: shine 2s infinite;
         }
         
@@ -364,11 +366,11 @@
         }
         
         .education-item {
-            background: white;
+            background: var(--light);
             border-radius: 10px;
             padding: 30px;
             margin-bottom: 30px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             position: relative;
             overflow: hidden;
@@ -376,7 +378,7 @@
         
         .education-item:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
         }
         
         .education-item::before {
@@ -413,7 +415,7 @@
         }
         
         .education-item p {
-            color: #4A5568;
+            color: #B0B0B0;
         }
         
         /* Experience Section */
@@ -423,11 +425,11 @@
         }
         
         .experience-item {
-            background: white;
+            background: var(--light);
             border-radius: 10px;
             padding: 30px;
             margin-bottom: 30px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             position: relative;
             overflow: hidden;
@@ -435,7 +437,7 @@
         
         .experience-item:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
         }
         
         .experience-item::before {
@@ -472,7 +474,7 @@
         }
         
         .experience-item p {
-            color: #4A5568;
+            color: #B0B0B0;
         }
         
         .experience-item a {
@@ -496,16 +498,16 @@
         }
         
         .project-card {
-            background: white;
+            background: var(--light);
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         
         .project-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
         }
         
         .project-image {
@@ -531,11 +533,11 @@
         .project-content h3 {
             font-size: 1.3rem;
             margin-bottom: 10px;
-            color: var(--dark);
+            color: var(--text);
         }
         
         .project-content p {
-            color: #4A5568;
+            color: #B0B0B0;
             margin-bottom: 15px;
         }
         
@@ -588,10 +590,10 @@
         }
         
         .achievement-card {
-            background: white;
+            background: var(--light);
             border-radius: 10px;
             padding: 30px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             position: relative;
             overflow: hidden;
@@ -599,7 +601,7 @@
         
         .achievement-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
         }
         
         .achievement-card h3 {
@@ -609,7 +611,7 @@
         }
         
         .achievement-card p {
-            color: #4A5568;
+            color: #B0B0B0;
             margin-bottom: 15px;
         }
         
@@ -644,7 +646,7 @@
         .contact-visual img {
             max-width: 100%;
             border-radius: 15px;
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
         }
         
         .contact-methods {
@@ -652,10 +654,10 @@
         }
         
         .contact-card {
-            background: white;
+            background: var(--light);
             padding: 30px;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
             margin-bottom: 30px;
         }
         
@@ -679,7 +681,7 @@
         
         .contact-button:hover {
             transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
         }
         
         .contact-button.linkedin {
@@ -709,15 +711,15 @@
             flex: 1;
             text-align: center;
             padding: 15px;
-            background: white;
+            background: var(--light);
             border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             transition: all 0.3s ease;
         }
         
         .resume-button:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
         }
         
         .resume-button h4 {
@@ -760,7 +762,7 @@
         
         /* Footer */
         footer {
-            background: var(--dark);
+            background: var(--light);
             color: white;
             padding: 50px 0 20px;
             text-align: center;
@@ -787,7 +789,7 @@
         }
         
         .footer-links a {
-            color: var(--gray);
+            color: #B0B0B0;
             margin: 0 15px;
             text-decoration: none;
             transition: color 0.3s ease;
@@ -822,7 +824,7 @@
         }
         
         .copyright {
-            color: var(--gray);
+            color: #B0B0B0;
             font-size: 0.9rem;
             padding-top: 20px;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -857,7 +859,7 @@
             opacity: 0;
             visibility: hidden;
             transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
             z-index: 999;
         }
         
@@ -911,10 +913,10 @@
                 top: 80px;
                 left: 0;
                 width: 100%;
-                background: white;
+                background: var(--light);
                 flex-direction: column;
                 padding: 20px 0;
-                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
                 z-index: 999;
             }
             
@@ -974,14 +976,10 @@
                     <p>A passionate Computer Science Engineer with expertise in full-stack development and machine learning. I love turning ideas into reality through code.</p>
                     <div class="resume-buttons">
                         <div class="resume-button">
-                            <h4>Detailed Resume</h4>
-                            <a href="Word-Resume.pdf" download="Bonthu_Vaishnavi_Detailed_Resume.pdf">Download</a>
+<h2>My Resumes</h2><br>
+                            <a href="Word-Resume.pdf" download="Bonthu_Vaishnavi_Detailed_Resume.pdf">Detailed Resume</a>    <br>    <br>                      <a href="Template-Resume.pdf" download="Bonthu_Vaishnavi_Short_Resume.pdf">Short Resume</a>
                         </div>
-                        <div class="resume-button">
-                            <h4>Short Resume</h4>
-                            <a href="Template-Resume.pdf" download="Bonthu_Vaishnavi_Short_Resume.pdf">Download</a>
-                        </div>
-                    </div>
+                                            </div>
                     <div class="social-icons">
                         <a href="https://www.linkedin.com/in/vaishnavi-bonthu" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                         <a href="https://github.com/VaishnaviBonthu005" target="_blank"><i class="fab fa-github"></i></a>
@@ -1249,6 +1247,25 @@
                         </div>
                     </div>
                 </div>
+
+<div class="project-card">
+                    <div class="project-image">
+                        <img src="https://cdn.pixabay.com/photo/2017/10/31/09/55/dream-job-2904780_640.jpg" alt="Job Portal">
+                    </div>
+                    <div class="project-content">
+                        <h3>Job Portal</h3>
+                        <p>The Job Portal is a web application for job seekers to apply for jobs and employers to post openings using PHP and MySQL.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">PHP</span>
+                            <span class="project-tag">MySQL</span>
+                            <span class="project-tag">Web Development</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/VaishnaviBonthu005/JobPortal" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                        </div>
+                    </div>
+                </div>
+
                 
                 <div class="project-card">
                     <div class="project-image">
@@ -1388,7 +1405,7 @@
                     </div>
                     
                     <div style="text-align: center; margin-top: 20px;">
-                        <p style="color: #4A5568;">Or reach out through any of these platforms:</p>
+                        <p style="color: #B0B0B0;">Or reach out through any of these platforms:</p>
                         <div class="social-icons">
                             <a href="https://www.linkedin.com/in/vaishnavi-bonthu" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                             <a href="https://github.com/VaishnaviBonthu005" target="_blank"><i class="fab fa-github"></i></a>
